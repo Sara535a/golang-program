@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	id := getUserById("Abi")
+	id := getUserById("sk")
 	fmt.Println(id)
 	go getUserByChats()
 	//log.Println(chats)
@@ -19,15 +19,15 @@ func main() {
 func getUserByChats() []string {
 	time.Sleep(time.Second * 4)
 	return []string{
-		"Abi",
-		"Siva",
-		"Sing",
+		"sk",
+		"bk",
+		"ak",
 	}
 }
 func getUserByFriends() []string {
 	time.Sleep(time.Second * 6)
 	return []string{
-		"Abi",
+		"sk",
 	}
 }
 func getUserById(na string) string {
